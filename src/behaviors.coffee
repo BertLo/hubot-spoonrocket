@@ -49,7 +49,7 @@ module.exports = (robot) =>
 
         messages = []
         for id, entry of entries
-          messages.push "#{entry.name} - #{properties}\n#{entry.description}\n#{entry.image.original}\n"
+          messages.push "#{entry.name} - #{entry.properties}\n#{entry.description}\n#{entry.image.original}\n"
         for message in messages
          msg.send message
 
